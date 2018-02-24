@@ -1,0 +1,27 @@
+body{
+	background-color:  #484C91;
+}
+a{
+	font-family: Arial;
+	font-size: 25px;
+	text-decoration: none;
+	color: white;
+}
+.content{
+	
+}
+.journal{
+	text-align: center;
+	background-color: #929BEF;
+	height: 75px;
+}
+.todo{
+	text-align: center;
+	background-color: #539DFD;
+	height: 75px;
+}
+.tasks{
+	text-align: center;
+	background-color: #9BCDF3;
+	height: 75px;
+}
