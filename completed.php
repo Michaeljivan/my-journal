@@ -19,8 +19,8 @@
 	        <tbody>
 	          <tr>
 	            <th>Task Description</th>
-	            <th>Create Time</th>
 	            <th>Completed Time</th>
+	            
 	          </tr>
 	          
 	            <?php
@@ -28,7 +28,7 @@
 	                echo "<tr>
 	                        <td>{$data['task_desc']}</td>
 	                        <td>{$data['created']}</td>                        
-	                        <td></td>
+	                        
 	                     </tr>";                
 	              } 
 	            ?>
