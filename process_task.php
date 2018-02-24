@@ -4,8 +4,9 @@
 	if(!empty($_POST['desc']))
 	{
 		$description = mysqli_real_escape_string($con, $_POST['desc']);
+		$sub = mysqli_real_escape_string($con, $_POST['subj']);
 
-		$sql = "INSERT INTO tasks (task_id, task_desc, completed, created) VALUES (0, '".$description."', 0, NOW())";
+		$sql = "INSERT INTO tasks (task_id, subject, task_desc, completed, created) VALUES (0,'".$sub."', '".$description."', 0, NOW())";
 		$insert_sql = mysqli_query($con, $sql);
 
 		if($insert_sql){

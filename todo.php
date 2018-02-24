@@ -19,6 +19,7 @@
       <table class="flat-table">
         <tbody>
           <tr>
+            <th>Subject</th>
             <th>Task Description</th>
             <th>Create Time</th>
             <th>Mark Complete</th>
@@ -27,6 +28,7 @@
             <?php
               while($data = mysqli_fetch_array($task_data)){
                 echo "<tr>
+                        <td>{$data['subject']}</td>
                         <td>{$data['task_desc']}</td>
                         <td>{$data['created']}</td>                        
                         <td><input type='checkbox' name='check[$i]' value='".$data['task_desc']."'></td>
@@ -37,6 +39,7 @@
         </tbody>
       </table>        
       <input style="float: left;" class="flat-table" type="submit" value="Mark Complete!" name="mark">
+      <a href="journal.php">New Task</a>
     </form>
         
       </body>

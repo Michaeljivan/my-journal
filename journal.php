@@ -13,13 +13,21 @@
   
         <div class="container">
           <form action="process_task.php" method="post">
-            
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Subject</label>
+              </div>
+              <div class="col-75">
+                <input id="subject" name="subj" placeholder="Class">
+              </div>
+            </div>
+            <div class="row">
             <div class="row">
               <div class="col-25">
                 <label for="subject">What needs to be done?</label>
               </div>
               <div class="col-75">
-                <textarea id="subject" name="desc" placeholder="Write something.." style="height:200px"></textarea>
+                <textarea id="subject" name="desc" placeholder="Task.." style="height:200px"></textarea>
               </div>
             </div>
             <div class="row">

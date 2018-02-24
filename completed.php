@@ -18,6 +18,7 @@
 	      <table class="flat-table">
 	        <tbody>
 	          <tr>
+	          	<th>Subject</th>
 	            <th>Task Description</th>
 	            <th>Completed Time</th>
 	            
@@ -26,6 +27,7 @@
 	            <?php
 	              while($data = mysqli_fetch_array($task_data)){
 	                echo "<tr>
+	                		<td>{$data['subject']}</td>
 	                        <td>{$data['task_desc']}</td>
 	                        <td>{$data['created']}</td>                        
 	                        
